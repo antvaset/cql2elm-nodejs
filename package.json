@@ -1,8 +1,8 @@
 {
-  "dependencies": {
-    "cql2elm": "github:antvaset/cql2elm"
-  },
   "devDependencies": {
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "@cqframework/cql": "github:antvaset/cql-npm"
   }
 }

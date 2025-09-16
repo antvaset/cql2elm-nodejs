@@ -1,4 +1,5 @@
 import "./require-polyfill.mjs";
+import { NamespaceManager } from "@cqframework/cql/cql";
 import {
   DefaultModelInfoProvider,
   DefaultLibrarySourceProvider,
@@ -6,9 +7,10 @@ import {
   ModelManager,
   LibraryManager,
   CqlTranslator,
-} from "cql2elm";
+} from "@cqframework/cql/cql-to-elm";
 
-const modelManager = new ModelManager();
+const namespaceManager = new NamespaceManager();
+const modelManager = new ModelManager(namespaceManager);
 modelManager.modelInfoLoader.registerModelInfoProvider(
   new DefaultModelInfoProvider(stringAsPath("./models")),
 );
