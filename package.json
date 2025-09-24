@@ -1,8 +1,5 @@
 {
-  "devDependencies": {
-    "prettier": "^3.6.2"
-  },
   "dependencies": {
-    "@cqframework/cql": "github:antvaset/cql-npm"
+    "@cqframework/cql": "^4.0.0-beta.1"
   }
 }
